@@ -1,0 +1,20 @@
+--------- beginning of crash
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: FATAL EXCEPTION: Thread-9
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: Process: com.android.keepass, PID: 27970
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: java.lang.RuntimeException: java.io.IOException: 
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.crypto.CryptoUtil.hashGen(CryptoUtil.java:108)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.crypto.CryptoUtil.hashSha256(CryptoUtil.java:82)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.crypto.CryptoUtil.hashSha256(CryptoUtil.java:78)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.crypto.PwStreamCipherFactory.getSalsa20(PwStreamCipherFactory.java:47)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.crypto.PwStreamCipherFactory.getInstance(PwStreamCipherFactory.java:33)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.database.save.PwDbV4Output.setIVs(PwDbV4Output.java:405)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.database.save.PwDbV4Output.outputHeader(PwDbV4Output.java:420)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.database.save.PwDbV4Output.output(PwDbV4Output.java:189)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.Database.SaveData(Database.java:196)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.Database.SaveData(Database.java:184)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.database.edit.SaveDB.run(SaveDB.java:55)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.database.edit.SetPassword.run(SetPassword.java:92)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:784)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: Caused by: java.io.IOException: 
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	at com.keepassdroid.crypto.CryptoUtil.hashGen(CryptoUtil.java:102)
+04-16 15:58:40.814 27970 28068 E AndroidRuntime: 	... 12 more
