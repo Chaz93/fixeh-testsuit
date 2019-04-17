@@ -16,8 +16,9 @@ if __name__ == "__main__" :
                                                              'maxcount=','test_dir=','testcase='])
     policy_file = 'fixeh-policy.xml'
     dest_dir = '/data/local/tmp'
-    crash_log = 'crash-stack.log'
-    format_output = 'format-out.out'
+    #crash_log = 'crash-stack.log'
+    #appium_log = 'err.out'
+    triggering_log = 'triggering.log'
     final_log = 'LOG.log'
     tri_maxcount = None
     tri_exception = None
@@ -77,12 +78,14 @@ if __name__ == "__main__" :
         if test_id == 0:
             last_policy = policygenerator.generator_methodfilter_policy()
         else:
-            log_file = os.path.join(test_dir,str(test_id - 1),crash_log)
-            format_file = os.path.join(test_id,str(test_id - 1),format_output)
-            if not os.path.exists(log_file):
-                print('end crash at %d turn' % test_id)
+            log_file = os.path.join(test_dir,str(test_id - 1),final_log)
+            triggering_log_file = os.path.join(test_id,str(test_id - 1),triggering_log)
+            flag = policygenerator.analyze_appium_error()
+            if not flag:
+                print('end error at %d turn' % (test_id - 1))
                 exit(1)
-            policygenerator.analyze_carsh_log(analyze_file=log_file, outformat_file=format_output)
+            #policygenerator.analyze_carsh_log(analyze_file=log_file, outformat_file=format_output)
+            flag = policygenerator.analyze_appium_error(appium_log=log_file,trigger_file=triggering_log_file)
             last_policy = policygenerator.generator_increasemetn_methodfilters_policy(last_policy=last_policy)
 
         current_policy_file=os.path.join(current_test_dir,policy_file)
@@ -101,6 +104,5 @@ if __name__ == "__main__" :
             appium_conductor = subprocess.Popen(['python',testcase],stdout=l_fps,stderr=l_fps)
             appium_conductor.communicate()
 
-        if not os.path.exists(current_test_dir,crash_log):
-            flag = False
-
+        if not os.path.exists(current_log):
+            print('end error at %d turn' % test_id)

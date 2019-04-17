@@ -32,6 +32,7 @@ class PolicyGenerator(object):
             __maxcount = str(-1)
         else:
             __maxcount = tri_maxcount
+
     def analyze_carsh_log(self,analyze_file,outformat_file):
         stackelement = None
         stacklocation = None
@@ -108,3 +109,28 @@ class PolicyGenerator(object):
         if pattern is not None:
             temp_pattern = self.__pattern_format % pattern
         return self.__exception_format % (self.__exception,temp_pattern,self.__maxcount)
+
+    def analyze_appium_error(self,appium_err_out_file,trigger_file):
+        error = False
+        method = None
+        stackkeyword = None
+        with open(appium_err_out_file,'r') as fps:
+            if 'Traceback' in fps.readlines():
+                error = True
+        if error:
+            with open(trigger_file,'r') as tf_fps:
+                while True:
+                    line = tf_fps.readline()
+                    if line:
+                        if 'triggering' in line:
+                            method = line.split('exception on ')[1].strip()
+                            line = tf_fps.readline()
+                            stackkeyword = line.split('at ')[1].split('(')[0].strip()
+                    else:break
+            if method is None or stackkeyword is None:
+                print('wrong get trigger_file key value')
+                exit(2)
+            self.__stackkeyword = stackkeyword
+            self.__filter_method = method
+
+        return error

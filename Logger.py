@@ -53,10 +53,10 @@ class Logger(object):
         return pid
 
     def generate_log_file(self,pid):
-        #formal_lines = []
-        #simple_lines = []
-        #triggering_lines = []
+
         crashstack = []
+        trigger_stack = False
+        trigger_exception = False
         with open(self.temp_output, 'r') as fps , open(self.output, 'a+') as out_fps,\
                 open(self.simple_output,'a+') as sim_fps, open(self.triggering_out,'a+') as tri_fps:
             for line in fps.readlines():
@@ -64,11 +64,25 @@ class Logger(object):
                     out_fps.write(line)
                     if "I fixeh" in line:
                         sim_fps.write(line + "\n")
-                        if "triggering" in line:
-                            tri_fps.write("Test"+self.tag +" :: "+ line + "\n")
+                        if "triggering" in line or trigger_stack:
+                            if not trigger_stack:
+                                tri_fps.write("Test"+self.tag +" :: "+ line)
+                                trigger_stack = True
+                                trigger_exception = True
+                                continue
+                            if trigger_exception:
+                                if 'Exception' in line:
+                                    tri_fps.write(line)
+                                trigger_exception =  False
+                                continue
+                            if trigger_stack and 'at' in line:
+                                tri_fps.writeline(line)
+                                continue
+                            trigger_stack = False
+                            #trigger_stack = not trigger_stack
                 if "beginning of crash" in line:
                     if pid in line:
-                        crashstack.append(line + "\n")
+                        crashstack.append(line)
                     continue
                 if len(crashstack) != 0:
                     if "AndroidRuntime" in line:
