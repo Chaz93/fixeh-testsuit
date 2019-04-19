@@ -1,0 +1,25 @@
+<fixeh>
+    <!-- address should be replaced before pushing to remote device -->
+    <remote-controller enable="false" address="127.0.0.1" port="7675"/>
+    <!-- if exclude is false, then all package/class/method will be supposed to be included -->
+    <policy exclude="false" search="false" limit="-1">
+        <!-- policy file may contain any enties this file contains, and value may be remote(http/https) -->
+        <!-- ONLY THE FIRST FILE POLICY WILL BrE USED! -->
+
+        <!--<policyentry kind="file" value="file:///data/local/tmp/fixeh-policy.xml"/>-->
+
+
+        <!-- ALL EXCLUDED -->
+
+        <!-- you can specify as many package/class/method entries as you can (even if duplicated), -->
+        <!-- class name must be full qualified, method name must be set like the example below -->
+        <!--policyentry kind = "filter" type = "method" value ="java.io.File&#58; java.io.File getCanonicalFile()"/-->
+        <!--policyentry kind = "filter" type = "method" value ="java.io.File&#58; java.io.String getCanonicalFile()"/-->
+        <!--policyentry kind = "filter" type = "method" value ="java.io.File&#58; java.lang.String getCanonicalPath()"/-->
+        <!--policyentry kind = "filter" type = "stackkeyword" value =".onCreate"/-->
+        <!-- policyentry kind = "class" -->
+        <policyentry kind="exception" value="java.io.IOException"  maxcount="-1"/>
+    </policy>
+</fixeh>
+
+

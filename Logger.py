@@ -43,8 +43,8 @@ class Logger(object):
             #self.close_old()
 
     def get_pid(self):
-        pid_catcher = subprocess.Popen("adb shell \"ps | grep %s\"" % self.app_package_name,
-                                       stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+        pid_catcher = subprocess.Popen(['adb','shell', 'ps', '|','grep', self.app_package_name],
+                                       stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         (stdout, stderr)=pid_catcher.communicate()
         if stderr is not None and len(stderr) != 0:
             print("fail to get pid with info: %s" % stderr.decode('gbk'))
@@ -52,18 +52,27 @@ class Logger(object):
         pid = stdout.decode('gbk').split()[1]
         return pid
 
-    def generate_log_file(self,pid):
+    def generate_log_file(self,pid=None):
 
         crashstack = []
         trigger_stack = False
         trigger_exception = False
+        with open(self.temp_output,'r') as temp_fps:
+            while True:
+                line = temp_fps.readline()
+                if 'fixeh' in line:
+                    pid = line.split(' ')[2]
+                    break
+                if not line:
+                    print('fail to get pid!')
+                    exit(2)
         with open(self.temp_output, 'r') as fps , open(self.output, 'a+') as out_fps,\
                 open(self.simple_output,'a+') as sim_fps, open(self.triggering_out,'a+') as tri_fps:
             for line in fps.readlines():
                 if pid in line:
                     out_fps.write(line)
                     if "I fixeh" in line:
-                        sim_fps.write(line + "\n")
+                        sim_fps.write(line)
                         if "triggering" in line or trigger_stack:
                             if not trigger_stack:
                                 tri_fps.write("Test"+self.tag +" :: "+ line)
@@ -75,8 +84,8 @@ class Logger(object):
                                     tri_fps.write(line)
                                 trigger_exception =  False
                                 continue
-                            if trigger_stack and 'at' in line:
-                                tri_fps.writeline(line)
+                            if trigger_stack and '\tat' in line:
+                                tri_fps.write(line)
                                 continue
                             trigger_stack = False
                             #trigger_stack = not trigger_stack

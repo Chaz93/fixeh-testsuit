@@ -5,7 +5,9 @@ class PolicyGenerator(object):
     __filter_package = None
     __filter_stackkeyword = None
     __fixeh_head = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" \
-                      "<fixeh>\n"
+                      "<fixeh>\n" \
+    "   <remote-controller enable=\"false\" address=\"127.0.0.1\" port=\"7675\"/>\n" \
+    "   <policy exclude=\"false\" search=\"false\" limit=\"-1\">\n"
     __method_fliter_format = '<policyentry kind = \"filter\" type = \"method\" value = \"%s\" %s/>\n'
     __class_fliter_format = '<policyentry kind = \"filter\" type = \"class\" value = \"%s\" %s/>\n'
     __package_fliter_format = '<policyentry kind = \"filter\" type = \"package\" value = \"%s\" %s/>\n'
@@ -90,7 +92,7 @@ class PolicyGenerator(object):
                + self.__generator_exception_pattern() + self.__fixeh_end
 
     #every time only one method can be added
-    def generator_increasemetn_methodfilters_policy(self,last_policy):
+    def generator_increasement_methodfilters_policy(self,last_policy):
         policy = ''
         for line in last_policy.split('\n'):
             if 'maxcount' in line:
@@ -115,7 +117,7 @@ class PolicyGenerator(object):
         method = None
         stackkeyword = None
         with open(appium_err_out_file,'r') as fps:
-            if 'Traceback' in fps.readlines():
+            if 'Traceback' in fps.read():
                 error = True
         if error:
             with open(trigger_file,'r') as tf_fps:
@@ -125,6 +127,8 @@ class PolicyGenerator(object):
                         if 'triggering' in line:
                             method = line.split('exception on ')[1].strip()
                             line = tf_fps.readline()
+                            while not '\tat ' in line:
+                                line = tf_fps.readline()
                             stackkeyword = line.split('at ')[1].split('(')[0].strip()
                     else:break
             if method is None or stackkeyword is None:

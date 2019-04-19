@@ -35,24 +35,33 @@ except getopt.GetoptError:
     print('wrong get opt at test case')
     exit(30)
 
+if test_app_package is None or test_dir is None:
+    print('wrong get app package or test dir')
+    exit(4)
+
+
 try:
+
     pre_conductor = TestPrepare.Preparer(err_log_file=os.path.join(test_dir,"err.out"),
-                                        base_dir="/storage/emulated/0/keepass",
-                                        initial_dir=test_dir)
+                                      base_dir="/storage/emulated/0/keepass",
+                                      initial_dir=test_dir)
 
     logger = Logger.Logger(output_dir=test_dir,app_package_name=test_app_package)
     logger.begin_log()
+    time.sleep(2)
+
     driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
-    driver.implicitly_wait(5)
-
-
+    driver.implicitly_wait(10)
 
     #创建数据库
+    pid = logger.get_pid()
+    time.sleep(2)
     driver.find_element_by_id("com.android.keepass:id/create").click()
     time.sleep(2)
-    pid = logger.get_pid()
+
     #输入密码
-    driver.find_element_by_id("com.android.keepass:id/pass_password").send_keys("123")
+    el = driver.find_element_by_id("com.android.keepass:id/pass_password")
+    el.send_keys("123")
     time.sleep(2)
     #确认密码
     driver.find_element_by_id("com.android.keepass:id/pass_conf_password").send_keys("123")
@@ -72,7 +81,7 @@ try:
     time.sleep(2)
     #点击确定
     driver.find_element_by_id("com.android.keepass:id/pass_ok").click()
-    time.sleep(2)
+    time.sleep(5)
     #密码错误，重新输入
     driver.find_element_by_id("com.android.keepass:id/password").clear();
     time.sleep(2)
@@ -98,9 +107,13 @@ try:
     driver.find_element_by_id("android:id/title").click()
     time.sleep(1)
 
-    driver.quit()
-finally:
-    logger.generate_log_file(pid=pid)
-    logger.close()
+    #pid = logger.get_pid()
+    time.sleep(2)
 
-    pre_conductor.clear(test_files=['/storage/emulated/0/keepass/keepass.kdbx'])
+
+finally:
+    driver.quit()
+    time.sleep(10)
+    logger.close()
+    logger.generate_log_file(pid=pid)
+    pre_conductor.clear(test_files=['keepass.kdbx'])

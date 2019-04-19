@@ -11,14 +11,14 @@ def usage() :
 
 if __name__ == "__main__" :
 
-    options, args = getopt.getopt(sys.argv[1:],'he:p:c:m:P:C:M:t:T',['help','excepiton=','package=','class=','method=',
+    options, args = getopt.getopt(sys.argv[1:],'he:p:c:m:P:C:M:t:T:A',['help','excepiton=','package=','class=','method=',
                                                              'filter_package=','filter_class=','filter_method=',
-                                                             'maxcount=','test_dir=','testcase='])
+                                                             'maxcount=','test_dir=','testcase=','apppackage='])
     policy_file = 'fixeh-policy.xml'
     dest_dir = '/data/local/tmp'
     #crash_log = 'crash-stack.log'
     #appium_log = 'err.out'
-    triggering_log = 'triggering.log'
+    triggering_log = 'trigger.log'
     final_log = 'LOG.log'
     tri_maxcount = None
     tri_exception = None
@@ -30,6 +30,7 @@ if __name__ == "__main__" :
     filter_method = None
     test_dir = None
     testcase = None
+    apppackage = None
 
 
     try:
@@ -56,6 +57,8 @@ if __name__ == "__main__" :
                 test_dir = value
             if name in ('-T','--testcase'):
                 testcase = os.path.join(os.getcwd(),value)
+            if name in ('-A','--apppackage'):
+                apppackage = value
     except getopt.GetoptError:
         usage()
         exit(30) # get wrong opt parameter
@@ -63,7 +66,7 @@ if __name__ == "__main__" :
 
     test_id = 0
     flag = True
-    test_dir = os.path.join(os.getcwd,test_dir)
+    test_dir = os.path.join(os.getcwd(),test_dir)
     if not os.path.exists(test_dir):
         os.makedirs(test_dir)
     assert(os.path.exists(test_dir))
@@ -71,7 +74,10 @@ if __name__ == "__main__" :
     last_policy = None
 
     while flag:
+        print('start at %d turn' % (test_id))
         current_test_dir = os.path.join(test_dir,str(test_id))
+        if not os.path.exists(current_test_dir):
+            os.makedirs(current_test_dir)
         current_log = os.path.join(current_test_dir,final_log)
         policygenerator = PolicyGenerator.PolicyGenerator(tri_exception=tri_exception, tri_method=tri_method, tri_class=tri_class,
                                           tri_package=tri_package, tri_maxcount=tri_maxcount)
@@ -79,14 +85,13 @@ if __name__ == "__main__" :
             last_policy = policygenerator.generator_methodfilter_policy()
         else:
             log_file = os.path.join(test_dir,str(test_id - 1),final_log)
-            triggering_log_file = os.path.join(test_id,str(test_id - 1),triggering_log)
-            flag = policygenerator.analyze_appium_error()
+            triggering_log_file = os.path.join(test_dir, str(test_id - 1),triggering_log)
+            flag = policygenerator.analyze_appium_error(appium_err_out_file=log_file,trigger_file=triggering_log_file)
             if not flag:
                 print('end error at %d turn' % (test_id - 1))
                 exit(1)
             #policygenerator.analyze_carsh_log(analyze_file=log_file, outformat_file=format_output)
-            flag = policygenerator.analyze_appium_error(appium_log=log_file,trigger_file=triggering_log_file)
-            last_policy = policygenerator.generator_increasemetn_methodfilters_policy(last_policy=last_policy)
+            last_policy = policygenerator.generator_increasement_methodfilters_policy(last_policy=last_policy)
 
         current_policy_file=os.path.join(current_test_dir,policy_file)
 
@@ -101,8 +106,11 @@ if __name__ == "__main__" :
             exit(4) #stands for something is error whild call subprocess
 
         with open(current_log,'w') as l_fps:
-            appium_conductor = subprocess.Popen(['python',testcase],stdout=l_fps,stderr=l_fps)
+            appium_conductor = subprocess.Popen(['python',testcase,'-p',apppackage,'-b',current_test_dir],stdout=l_fps,stderr=l_fps)
             appium_conductor.communicate()
 
         if not os.path.exists(current_log):
             print('end error at %d turn' % test_id)
+
+        print('end error at %d turn' % test_id)
+        test_id += 1

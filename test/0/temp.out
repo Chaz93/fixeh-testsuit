@@ -1,0 +1,577 @@
+--------- beginning of main
+04-19 13:21:22.299   698   698 D WifiStateMachine: mBcastReceiver: PluggedType = 2 mIsScanCtrlPluggedin = true
+04-19 13:21:22.300   698   698 D HwWifiService: mPluggedType =2
+--------- beginning of system
+04-19 13:21:22.301   698   698 D WifiService: onReceive, action:android.intent.action.BATTERY_CHANGED
+04-19 13:21:22.301   698   698 D WifiService: ACTION_BATTERY_CHANGED pluggedType: 2
+04-19 13:21:22.303  1886  1886 I MsgReceiver: intent action: android.intent.action.BATTERY_CHANGED
+04-19 13:21:22.308 14278 14278 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-19 13:21:22.308 14278 14278 W KeyguardUpdateMonitor: ACTION_BATTERY_CHANGED AMP: 500000; Volt: 4808000
+04-19 13:21:22.310 14278 14278 V KeyguardUpdateMonitor: RefreshBatteryInfo isBatteryLow: 27
+04-19 13:21:22.310 14278 14278 W KeyguardUpdateMonitor: ChargingSpeed  Wattage: 2404000 ST: 5000000 --> 7500000
+04-19 13:21:22.310 14278 14278 I KgBattery: BatteryInfo updated:  2lPc0
+04-19 13:21:22.310 14278 14278 W AppHandler: sendMessage with obj100
+04-19 13:21:22.310 14278 14278 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-19 13:21:22.310 14278 14278 V KeyguardUpdateMonitor: RefreshBatteryInfo isBatteryLow: 27
+04-19 13:21:22.312 14278 14278 W HwKeyguardBottomArea: updateBatteryInfo : false  true
+04-19 13:21:22.312 14278 14278 W HwLockScreenPanel: Handle message: 100
+04-19 13:21:22.313 14278 14278 W HwLockScreenPanel: refreshBatteryInfo: null
+04-19 13:21:22.313 14278 14278 W KgBattery: getCharge info with type: text
+04-19 13:21:22.316 25883 26092 I [10.4.0.301]CloudAlbum.OperationUtil: cancelNotify
+04-19 13:21:22.324 14278 14278 W HwKeyguardBottomArea: updateBatteryInfo : false  true
+04-19 13:21:22.761   698  1790 W Watchdog: hungtask: writing kick
+04-19 13:21:22.765   698  1126 I EventHub: EventHub monitor: no key events in the past 1491s, no motion events in the past 1050s
+04-19 13:21:24.275   948  1061 W libc    : Set property "ril.hw_modem0.rssi" to "-75"
+04-19 13:21:24.287   698  1128 D SmartcareProc: onSignalStrengthsChanged: signalStrength is: SignalStrength: 0 -2017094084 0 255 0 0 32767 -1 32767 -1 -75 -4 41 -1 0 -1 false gw|lte , on sub: 1
+04-19 13:21:24.287   698  1128 D SmartcareProc: SignalStrength update result, ss: SignalStrengthInfo:49555504 mGsmSignalStrength: -1 mWcdmaRscp: -1 mWcdmaEcio: 255 mLteRsrp: -75 mLteRsrq: -4 mCdmaDbm: -1 mCdmaEcio: -1 mEvdoDbm: 32767mEvdoEcio: -1mLteRssnr: 41
+04-19 13:21:24.291   698   698 I MQoS    : onSignal: mSubId=1,currDataSubID=1
+04-19 13:21:24.291   698   698 I MQoS    : received cell-signal:5
+04-19 13:21:24.301 14278 14301 I HwMobileSignalController(1): subId:1 phoneType:1 networktype:13 targetClass:3 masterLevel:5 slaveLevel:-1
+04-19 13:21:25.093   502   641 W SocketListener: sending broadcast to Pid = 698, Uid = 1000 
+04-19 13:21:25.098   698  1411 D NetdConnector: RCV <- {613 IfaceClass idle 0 240702998552372}
+04-19 13:21:25.101   698  1411 D NetdConnector: RCV <- {613 IfaceClass idle 0 240702998552372}
+04-19 13:21:25.103   698  1126 D NetdConnector: RCV unsolicited event from native daemon, event = 613
+04-19 13:21:25.112   698  9526 V BroadcastQueue: Finished with ordered broadcast BroadcastRecord{9927cb u-1 android.net.conn.DATA_ACTIVITY_CHANGE}
+04-19 13:21:25.130   698  1114 E BatteryStatsService: modem info is invalid: ModemActivityInfo{ mTimestamp=0 mSleepTimeMs=0 mIdleTimeMs=0 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0 mEnergyUsed=0}
+04-19 13:21:25.258   948  1061 W libc    : Set property "ril.hw_modem0.rssi" to "-74"
+04-19 13:21:25.268  1902  1902 W libc    : Set property "gsm.rssi.sim2" to "-74"
+04-19 13:21:25.275   698  1128 D SmartcareProc: onSignalStrengthsChanged: signalStrength is: SignalStrength: 0 -2017094084 0 255 0 0 32767 -1 32767 -1 -74 -9 30 -1 0 -1 false gw|lte , on sub: 1
+04-19 13:21:25.276   698  1128 D SmartcareProc: SignalStrength update result, ss: SignalStrengthInfo:49555504 mGsmSignalStrength: -1 mWcdmaRscp: -1 mWcdmaEcio: 255 mLteRsrp: -74 mLteRsrq: -9 mCdmaDbm: -1 mCdmaEcio: -1 mEvdoDbm: 32767mEvdoEcio: -1mLteRssnr: 30
+04-19 13:21:25.282   698   698 I MQoS    : onSignal: mSubId=1,currDataSubID=1
+04-19 13:21:25.283   698   698 I MQoS    : received cell-signal:5
+04-19 13:21:25.291 14278 14301 I HwMobileSignalController(1): subId:1 phoneType:1 networktype:13 targetClass:3 masterLevel:5 slaveLevel:-1
+04-19 13:21:27.171   698  5306 I MQoS    : MSG_QUERY_TCP_INFO called,count:1388
+04-19 13:21:27.173   698   698 I HwQoEJNI: send_cmd_kernel. begin
+04-19 13:21:27.173   698   698 I HwQoEJNI: send_cmd_kernel. end
+04-19 13:21:27.173   698   698 I QosMonitor: postEventFromNative: msg=100,arg1=0,arg2=10
+04-19 13:21:27.174   698   698 I MQoS    : rtt=180,tcp_tx_pkts=387,tcp_rx_pkts=260
+04-19 13:21:27.178   698  5306 I TrafficMonitor: getStatic,count:0,work status:false
+04-19 13:21:27.178   698  5306 I MQoS    : QOS_level:5(5),use RAT:4G;signalLvl:5
+04-19 13:21:27.325   843   843 E         : [E/capacity_limit_control] not demo version, not set power control prop!
+04-19 13:21:29.043 30693 30693 I appproc : CLASSPATH=/system/framework/pm.jar
+04-19 13:21:29.043 30693 30693 I appproc : Command=app_process /system/bin com.android.commands.pm.Pm list packages com.android.keepass 
+04-19 13:21:29.043 30693 30693 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+04-19 13:21:29.044 30693 30693 I AndroidRuntime: readDownloadBoosterConfig: 'false'
+04-19 13:21:29.045 30693 30693 I cutils-trace: atrace_init_once, trace_marker_path = /sys/kernel/debug/tracing/trace_marker
+04-19 13:21:29.101 30693 30693 I app_process: Reinit property: dalvik.vm.checkjni= false
+04-19 13:21:29.103 30693 30693 V HwFrameworkFactory: : successes to get AllImpl object and return....
+04-19 13:21:29.111 30693 30693 I HWSERVICES: hwnative_get_component_register:libdrmbitmap,JNI
+04-19 13:21:29.121 30693 30693 E Zygote  : register_com_android_internal_os_Zygote num = 0
+04-19 13:21:29.128 30693 30693 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+04-19 13:21:29.144 30693 30693 I app_process: System.exit called, status: 0
+04-19 13:21:29.144 30693 30693 I AndroidRuntime: VM exiting with result code 0.
+04-19 13:21:29.573 30707 30707 I appproc : CLASSPATH=/system/framework/pm.jar
+04-19 13:21:29.573 30707 30707 I appproc : Command=app_process /system/bin com.android.commands.pm.Pm list packages io.appium.settings 
+04-19 13:21:29.573 30707 30707 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+04-19 13:21:29.575 30707 30707 I AndroidRuntime: readDownloadBoosterConfig: 'false'
+04-19 13:21:29.575 30707 30707 I cutils-trace: atrace_init_once, trace_marker_path = /sys/kernel/debug/tracing/trace_marker
+04-19 13:21:29.632 30707 30707 I app_process: Reinit property: dalvik.vm.checkjni= false
+04-19 13:21:29.636 30707 30707 V HwFrameworkFactory: : successes to get AllImpl object and return....
+04-19 13:21:29.641 30707 30707 I HWSERVICES: hwnative_get_component_register:libdrmbitmap,JNI
+04-19 13:21:29.651 30707 30707 E Zygote  : register_com_android_internal_os_Zygote num = 0
+04-19 13:21:29.657 30707 30707 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+04-19 13:21:29.672 30707 30707 I app_process: System.exit called, status: 0
+04-19 13:21:29.672 30707 30707 I AndroidRuntime: VM exiting with result code 0.
+04-19 13:21:29.731   948  1061 W libc    : Set property "ril.hw_modem0.rssi" to "-74"
+04-19 13:21:29.738   698  1128 D SmartcareProc: onSignalStrengthsChanged: signalStrength is: SignalStrength: 0 -2017094084 0 255 0 0 32767 -1 32767 -1 -74 -3 41 -1 0 -1 false gw|lte , on sub: 1
+04-19 13:21:29.738   698  1128 D SmartcareProc: SignalStrength update result, ss: SignalStrengthInfo:49555504 mGsmSignalStrength: -1 mWcdmaRscp: -1 mWcdmaEcio: 255 mLteRsrp: -74 mLteRsrq: -3 mCdmaDbm: -1 mCdmaEcio: -1 mEvdoDbm: 32767mEvdoEcio: -1mLteRssnr: 41
+04-19 13:21:29.742   698   698 I MQoS    : onSignal: mSubId=1,currDataSubID=1
+04-19 13:21:29.742   698   698 I MQoS    : received cell-signal:5
+04-19 13:21:29.749 14278 14301 I HwMobileSignalController(1): subId:1 phoneType:1 networktype:13 targetClass:3 masterLevel:5 slaveLevel:-1
+04-19 13:21:29.765   698 14522 I PackageManager: Start dump, calling from : pid=30720, uid=2000
+04-19 13:21:30.312   698   698 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@91386c1
+04-19 13:21:30.313   698   698 W HwAlarmManagerService: isContainsAppUidInWorksource-->happend NameNotFoundException
+04-19 13:21:30.323   698   698 I HwAlarmManagerService: hwSetAlarm listenerTag: *job.deadline*
+04-19 13:21:30.324   698   698 I JobScheduler.Time: mNextJobExpiredElapsedMillis: 241875242
+04-19 13:21:30.402   698 14522 V BroadcastQueue: Finished with ordered broadcast BroadcastRecord{41075a7 u0 android.intent.action.DROPBOX_ENTRY_ADDED}
+04-19 13:21:30.423   698   698 W Binder:698_1F: type=1400 audit(0.0:62616): avc: granted { read } for path="/data/system/dropbox/system_server_wtf@1555651290331.txt" dev="mmcblk0p59" ino=171310 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file
+04-19 13:21:30.485 30733 30733 I appproc : CLASSPATH=/system/framework/pm.jar
+04-19 13:21:30.485 30733 30733 I appproc : Command=app_process /system/bin com.android.commands.pm.Pm list packages io.appium.unlock 
+04-19 13:21:30.485 30733 30733 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+04-19 13:21:30.486 30733 30733 I AndroidRuntime: readDownloadBoosterConfig: 'false'
+04-19 13:21:30.487 30733 30733 I cutils-trace: atrace_init_once, trace_marker_path = /sys/kernel/debug/tracing/trace_marker
+04-19 13:21:30.492  3271  3542 D WorkSource: Insert in WorkSource{} @ 0 uid 10138 name com.google.android.gms
+04-19 13:21:30.493   698  1871 D PGGoogleServicePolicy: prevent gms/gsf hold partial wakelock
+04-19 13:21:30.498  3271  3542 D WorkSource: Insert in WorkSource{} @ 0 uid 10138 name com.google.android.gms
+04-19 13:21:30.499   698 14522 D PGGoogleServicePolicy: prevent gms/gsf hold partial wakelock
+04-19 13:21:30.503  3271  3542 D WorkSource: Insert in WorkSource{} @ 0 uid 10138 name com.google.android.gms
+04-19 13:21:30.504   698 14522 D PGGoogleServicePolicy: prevent gms/gsf hold partial wakelock
+04-19 13:21:30.542 30733 30733 I app_process: Reinit property: dalvik.vm.checkjni= false
+04-19 13:21:30.544 30733 30733 V HwFrameworkFactory: : successes to get AllImpl object and return....
+04-19 13:21:30.549 30733 30733 I HWSERVICES: hwnative_get_component_register:libdrmbitmap,JNI
+04-19 13:21:30.559 30733 30733 E Zygote  : register_com_android_internal_os_Zygote num = 0
+04-19 13:21:30.565 30733 30733 D AndroidRuntime: Calling main entry com.android.commands.pm.Pm
+04-19 13:21:30.581 30733 30733 I app_process: System.exit called, status: 0
+04-19 13:21:30.581 30733 30733 I AndroidRuntime: VM exiting with result code 0.
+04-19 13:21:30.669   698 14522 I PackageManager: Start dump, calling from : pid=30751, uid=2000
+04-19 13:21:31.052 30756 30756 I appproc : CLASSPATH=/system/framework/wm.jar
+04-19 13:21:31.052 30756 30756 I appproc : Command=app_process /system/bin com.android.commands.wm.Wm size 
+04-19 13:21:31.052 30756 30756 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+04-19 13:21:31.054 30756 30756 I AndroidRuntime: readDownloadBoosterConfig: 'false'
+04-19 13:21:31.054 30756 30756 I cutils-trace: atrace_init_once, trace_marker_path = /sys/kernel/debug/tracing/trace_marker
+04-19 13:21:31.110 30756 30756 I app_process: Reinit property: dalvik.vm.checkjni= false
+04-19 13:21:31.115 30756 30756 V HwFrameworkFactory: : successes to get AllImpl object and return....
+04-19 13:21:31.120 30756 30756 I HWSERVICES: hwnative_get_component_register:libdrmbitmap,JNI
+04-19 13:21:31.129 30756 30756 E Zygote  : register_com_android_internal_os_Zygote num = 0
+04-19 13:21:31.136 30756 30756 D AndroidRuntime: Calling main entry com.android.commands.wm.Wm
+04-19 13:21:31.138 30756 30756 D AndroidRuntime: Shutting down VM
+04-19 13:21:31.890 30774 30774 I appproc : CLASSPATH=/system/framework/android.test.runner.jar:/system/framework/uiautomator.jar::/data/local/tmp/AppiumBootstrap.jar
+04-19 13:21:31.890 30774 30774 I appproc : Command=app_process /system/bin com.android.commands.uiautomator.Launcher runtest -c io.appium.android.bootstrap.Bootstrap -e pkg com.android.keepass -e disableAndroidWatchers false -e acceptSslCerts false -e jars :/data/local/tmp/AppiumBootstrap.jar 
+04-19 13:21:31.890 30774 30774 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+04-19 13:21:31.892 30774 30774 I AndroidRuntime: readDownloadBoosterConfig: 'false'
+04-19 13:21:31.892 30774 30774 I cutils-trace: atrace_init_once, trace_marker_path = /sys/kernel/debug/tracing/trace_marker
+04-19 13:21:31.949 30774 30774 W System  : ClassLoader referenced unknown path: 
+04-19 13:21:32.364   843   843 E         : [E/capacity_limit_control] not demo version, not set power control prop!
+04-19 13:21:34.871 30774 30774 I app_process: Reinit property: dalvik.vm.checkjni= false
+04-19 13:21:34.883 30774 30774 V HwFrameworkFactory: : successes to get AllImpl object and return....
+04-19 13:21:34.902 30774 30774 I HWSERVICES: hwnative_get_component_register:libdrmbitmap,JNI
+04-19 13:21:34.934 30774 30774 E Zygote  : register_com_android_internal_os_Zygote num = 0
+04-19 13:21:34.960 30774 30774 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+04-19 13:21:34.978   698 14522 I [SPMN]  : insert SECURE -- name = accessibility_enabled, package = android, user = 0, value = 1
+04-19 13:21:34.982   698   698 I [SPMN]  : insert SECURE -- name = accessibility_enabled, package = android, user = 0, value = 1
+04-19 13:21:34.983   698  1109 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+04-19 13:21:34.983   698  1109 I FingerprintActionsListener: accessibilityEnabled:true,isContainsTalkBackService:false,mGestureNavEnabled:false
+04-19 13:21:34.988   698 14525 D ActivityManager: setActivityController mControllerIsAMonkey:true callingPid:0 callingUid:2000
+04-19 13:21:35.004 14278 14301 E PhoneStatusBar: Setting not found exception : accessibility_display_magnification_navbar_enabled
+04-19 13:21:35.030 30774 30774 I UiWatchers: Registed GUI Exception watchers
+04-19 13:21:35.231   698  1871 I ActivityManager: Force stopping com.android.keepass appid=10809 user=0: from pid 30793by app
+04-19 13:21:35.232   698  1871 I ActivityManager: Killing 30629:com.android.keepass/u0a809 (adj 900): stop com.android.keepassfrom pid 30793by app
+04-19 13:21:35.234   698  1871 D ActivityManager: cleanUpApplicationRecord app: ProcessRecord{aff96fc 30629:com.android.keepass/u0a809}, app.bad: false, restarting: false, allowRestart: true
+04-19 13:21:35.254   698   698 V AlarmManager: UninstallReceiver onReceive action:android.intent.action.PACKAGE_RESTARTED
+04-19 13:21:35.256   698   698 D HwBastetService: BroadcastReceiver android.intent.action.PACKAGE_RESTARTED
+04-19 13:21:35.259  1872  1872 I HwCoreAppHelperService: LocalReceiver receives:android.intent.action.PACKAGE_RESTARTED,pkg:com.android.keepass,uid:10809
+04-19 13:21:35.263   698   698 D HwGpsPowerTracker: LocalReceiver receives:android.intent.action.PACKAGE_RESTARTED
+04-19 13:21:35.264  4545  4545 E NfcNci  : NfcUtils error: APP do not have nfc permission
+04-19 13:21:35.266  4545  4545 E NfcNci  : NfcUtils error: APP do not have nfc permission
+04-19 13:21:35.268   698  1397 W AwareLog: SchedLevelBoost: onProcessDied config not set!
+04-19 13:21:35.269  1872  1884 E HsmCoreServiceImpl: onTransact in code is: 102
+04-19 13:21:35.269  1872  1884 I MediaProcessHandler: processOp opType: 1, uid: 10809, pid: 30629
+04-19 13:21:35.269  1872  1884 W MediaProcessHandler: remove target not exist, maybe the UI process: uid: 10809, pid: 30629
+04-19 13:21:35.269  1872  1884 I MediaProcessHandler: executedCallBack opType: 1 mMediaStatusObservers.size=0
+04-19 13:21:35.272  1902  1902 D CarrierSvcBindHelper: No carrier app for: 0
+04-19 13:21:35.277  1902  1902 D CarrierSvcBindHelper: No carrier app for: 1
+04-19 13:21:35.493  1922  1922 W ResourceType: No known package when getting name for resource number 0x9b000000
+04-19 13:21:35.493  1922  1922 W ResourceType: No known package when getting name for resource number 0x9b010100
+04-19 13:21:35.493  1922  1922 W ResourceType: No known package when getting name for resource number 0x9b020200
+04-19 13:21:35.494  1922  1922 W ResourceType: No known package when getting name for resource number 0x9b030300
+04-19 13:21:35.495  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020000
+04-19 13:21:35.495  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020100
+04-19 13:21:35.496  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020200
+04-19 13:21:35.497  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020300
+04-19 13:21:35.497  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020001
+04-19 13:21:35.497  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020101
+04-19 13:21:35.498  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020201
+04-19 13:21:35.499  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020301
+04-19 13:21:35.500  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020002
+04-19 13:21:35.501  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020102
+04-19 13:21:35.502  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020202
+04-19 13:21:35.503  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020302
+04-19 13:21:35.504  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020003
+04-19 13:21:35.505  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020103
+04-19 13:21:35.506  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020203
+04-19 13:21:35.507   698  1871 I ActivityManager: START u0 {flg=0x10000000 cmp=com.android.keepass/.KeePass} from uid 2000
+04-19 13:21:35.508  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020303
+04-19 13:21:35.509  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020004
+04-19 13:21:35.510  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020104
+04-19 13:21:35.510  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020204
+04-19 13:21:35.511  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c020304
+04-19 13:21:35.513   698  1871 I ActivityManager: ActivityRecord info: ActivityInfo{555418f com.android.keepass.KeePass}
+04-19 13:21:35.515   809   849 I AwareLog: IAWARE_PREREAD_FILE
+04-19 13:21:35.516   809   896 D AwareLog: iawared: touch_file  base.odex
+04-19 13:21:35.520   809   896 D AwareLog: iawared: touch_file  base.vdex
+04-19 13:21:35.521   809   896 D AwareLog: preread_pkgfile com.android.keepass took 6 ms
+04-19 13:21:35.521   809   896 D AwareLog: preread_pkgfile com.android.keepass read 8843264 Bytes.
+04-19 13:21:35.521  1886  2331 I ash     : front pkg : com.android.keepass launcher: false
+04-19 13:21:35.521  1886  2331 I ash     : above launcher front pkgs: [com.android.keepass]
+04-19 13:21:35.523   698  1871 V WindowManager: addAppToken: AppWindowToken{7ee67ab token=Token{b4385fa ActivityRecord{7c20025 u0 com.android.keepass/.KeePass t3042}}} controller={TaskWindowContainerController taskId=3042} at 2147483647
+04-19 13:21:35.524  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c000000
+04-19 13:21:35.524  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c000004
+04-19 13:21:35.524  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c000104
+04-19 13:21:35.524  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c000204
+04-19 13:21:35.524  1922  1922 W ResourceType: No known package when getting name for resource number 0x9c000304
+04-19 13:21:35.525   698  1377 D HwCust  : Create obj success use class android.app.HwCustHwWallpaperManagerImpl
+04-19 13:21:35.526   698  1377 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.23, mControlPoint1y = 0.06, mControlPoint2x = 0.09, mControlPoint2y = 0.97
+04-19 13:21:35.526   698  1377 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+04-19 13:21:35.526   698  1377 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.23, mControlPoint1y = 0.06, mControlPoint2x = 0.09, mControlPoint2y = 0.97
+04-19 13:21:35.526   698  1377 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+04-19 13:21:35.528  1922 30796 D MotionDetectionManager: stopMotionAppsReco motionApps: 403
+04-19 13:21:35.528  1922 30796 D MotionDetectionManager: stopMotionAppsReco not recognition motionApps 403
+04-19 13:21:35.528  1922 30796 W HwLauncher: Launcher.MotionManager stopMotionAppsReco service flg 403 is unavailable
+04-19 13:21:35.528   698  1871 I ActivityManager: mWaitingActivityLaunched add ComponentName = null
+04-19 13:21:35.531  1886  4636 I PGServer: android calls fast hibernateApps
+04-19 13:21:35.531  1886  4636 I AppFastHibernation: fast hibernate duration: 1500 reason: start activity
+04-19 13:21:35.531   809   809 I Pged-IPgedBinderService: ****action is 1, pid num is 3***
+04-19 13:21:35.531   809   809 I Pged-Freezer: freezePids
+04-19 13:21:35.531   809   809 I Pged-Freezer: Freeze process: 25666
+04-19 13:21:35.532   809   809 I Pged-Freezer: Freeze process: 28547
+04-19 13:21:35.532   698  1377 V WindowManager: Adding Window{b86499e u0 Splash Screen com.android.keepass} to AppWindowToken{7ee67ab token=Token{b4385fa ActivityRecord{7c20025 u0 com.android.keepass/.KeePass t3042}}}
+04-19 13:21:35.532  1886  2215 D PgedBinderAdapter: frz ok, pid: [25666, 28547]
+04-19 13:21:35.533   698  1377 V WindowManager: addWindow: New client android.view.ViewRootImpl$W@534bbd9: window=Window{b86499e u0 Splash Screen com.android.keepass} Callers=com.android.server.wm.HwWindowManagerService.addWindow:585 com.android.server.wm.Session.addToDisplay:199 android.view.ViewRootImpl.setView:845 android.view.WindowManagerGlobal.addView:372 android.view.WindowManagerImpl.addView:128 
+04-19 13:21:35.540   698  1377 I PressGestureDetector: onAttached begin
+04-19 13:21:35.541   698  1377 I PressGestureDetector: onAttached end
+04-19 13:21:35.542   698  1377 E View    : focusableViewAvailable: current thread is android.anim, return!
+04-19 13:21:35.544   698 30797 I PressGestureDetector: enabledInPad = false,isPcCastMode = false
+04-19 13:21:35.546   698  1377 W WindowManager: EGLdebug Created surface WindowStateAnimator{cfac7f Splash Screen com.android.keepass}
+04-19 13:21:35.556   698 14522 V ActivityManager: startProcess: name=com.android.keepass app=null knownToBeDead=true thread=null pid=-1
+04-19 13:21:35.561   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x1,btStrd=4352,size=8355840,pid=676 
+04-19 13:21:35.561   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.561   676   676 I GRALLOC : 	 iova_size=8355840,conUsg=0x906,proUsg=0x966,	 strd=1088,[afbc]HdrStrd=0 PyldStrd=0 Scrmbl=0,ionhnd = 1 
+04-19 13:21:35.565   698 14522 I ActivityManager: Start proc 30799:com.android.keepass/u0a809 for activity com.android.keepass/.KeePass
+04-19 13:21:35.566 30799 30799 I         : power log dlsym ok
+04-19 13:21:35.566   698 14522 V WindowManager: No longer Stopped: AppWindowToken{7ee67ab token=Token{b4385fa ActivityRecord{7c20025 u0 com.android.keepass/.KeePass t3042}}}
+04-19 13:21:35.566   698 14522 V ActivityManager: startProcess: name=com.android.keepass app=ProcessRecord{9c8ac77 30799:com.android.keepass/u0a809} knownToBeDead=true thread=null pid=30799
+04-19 13:21:35.569 30799 30799 I zygote64: Reinit property: dalvik.vm.checkjni= false
+04-19 13:21:35.569   698  1377 D WindowManager: finishDrawingWindow: Window{b86499e u0 Splash Screen com.android.keepass} mDrawState=DRAW_PENDING
+04-19 13:21:35.585 30799 30799 D ActivityThread: ActivityThread,attachApplication
+04-19 13:21:35.585   698  4614 D ActivityManager: ActivityManagerService,attachApplication,callingPid = 30799
+04-19 13:21:35.588   698  4614 V WindowManager: No longer Stopped: AppWindowToken{7ee67ab token=Token{b4385fa ActivityRecord{7c20025 u0 com.android.keepass/.KeePass t3042}}}
+04-19 13:21:35.588   698  4614 I WindowManager: rotationForOrientationLw(orient=-1, last=0); user=0 USER_ROTATION_LOCKED
+04-19 13:21:35.588   698  4614 D HwPhoneWindowManager: face_rotation: not enabled,use sensor real
+04-19 13:21:35.588   698  4614 D HwPhoneWindowManager: face_rotation:real sensor rotation = -1
+04-19 13:21:35.588   698  4614 D HwPhoneWindowManager: face_rotation: rotation = 0
+04-19 13:21:35.588   698  4614 I WindowManager: Selected orientation -1, got rotation 0 which has compatible metrics
+04-19 13:21:35.592   698  4614 W HwActivityManagerServiceEx: appSwitch from: com.huawei.android.launcher to: com.android.keepass
+04-19 13:21:35.593   698  1105 W HwActivityManagerServiceEx: HwActivityNotifier end call android.app.IHwActivityNotifier$Stub$Proxy@dd8e10e for appSwitch under user 0 cost 0
+04-19 13:21:35.593  1886  2005 D ScenarioService: front pkg : com.android.keepass launcher: false
+04-19 13:21:35.593  1886  2005 D ScenarioService: new above launcher front pkgs: [com.android.keepass]
+04-19 13:21:35.593  1886  2005 I AppsUsage: scnOff:false FgAPP:com.android.keepass BgAPP:com.huawei.android.launcher
+04-19 13:21:35.594   698  1467 D EmcomManagerService: forePackage name is com.android.keepass
+04-19 13:21:35.595   698  1467 D HicomPolicyManager: foreAppInfo = nullpkgName = com.android.keepass uid= 10809
+04-19 13:21:35.595   698  1467 E HicomPolicyManager: udp acc is not start yet!
+04-19 13:21:35.595   698  1467 D HicomPolicyManager: speed control is not start
+04-19 13:21:35.595   698  1467 E HicomPolicyManager: Network Evaluation is not start yet!
+04-19 13:21:35.595   698  1467 E HicomPolicyManager: foreground app info is null
+04-19 13:21:35.596  3256  6509 D [HwRecSys]HwRecSysService: onEvent actionID: 10000 msg:com.android.keepass		
+04-19 13:21:35.596  3256  6509 I [HwRecSys]HwRecSysService:  cur pkg: com.android.keepass
+04-19 13:21:35.596  1886  2412 I PGServer: report state:10010 event type:2 pid:0 uid:0 pkg:com.huawei.android.launcher to pid: 698
+04-19 13:21:35.596  1886  2412 I PGServer: report state:10010 event type:2 pid:0 uid:0 pkg:com.huawei.android.launcher to pid: 1886
+04-19 13:21:35.596  1886  2412 I SceneReceiver: state type: 10010 eventType:2 pid:0 uid:0 pkg:com.huawei.android.launcher
+04-19 13:21:35.596  1886  2412 I PGServer: report state:10000 event type:1 pid:0 uid:0 pkg:com.android.keepass to pid: 698
+04-19 13:21:35.596  1886  2412 I PGServer: report state:10000 event type:1 pid:0 uid:0 pkg:com.android.keepass to pid: 1886
+04-19 13:21:35.596  1886  2412 I SceneReceiver: state type: 10000 eventType:1 pid:0 uid:0 pkg:com.android.keepass
+04-19 13:21:35.596  1886  2804 D HwThermalStateManager: current foreapp pkg : com.android.keepass
+04-19 13:21:35.598  1886  4636 I PGServer: checkPkgType. calling pkg: android
+04-19 13:21:35.598  1886  4636 I PGServer: checkPkgType. calling pkg: android
+04-19 13:21:35.600  1886  2964 W libc    : Set property "sys.aps.gameProcessName" to ""
+04-19 13:21:35.600   698  4614 V WindowManager: Checking 1 opening apps (frozen=false timeout=false)...
+04-19 13:21:35.600   698  4614 V WindowManager: Check opening app=AppWindowToken{7ee67ab token=Token{b4385fa ActivityRecord{7c20025 u0 com.android.keepass/.KeePass t3042}}}: allDrawn=false startingDisplayed=true startingMoved=false isRelaunching()=false
+04-19 13:21:35.601  1886  2964 W libc    : Set property "sys.aps.browserProcessName" to ""
+04-19 13:21:35.602   698  4614 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.5, mControlPoint1y = 0.2, mControlPoint2x = 0.6, mControlPoint2y = 1.0
+04-19 13:21:35.605   698  1109 D HwGameAssistantController: pid=30799, uid=10809, foreground=true
+04-19 13:21:35.607   698  1397 W AwareLog: SchedLevelBoost: onFgActivitiesChanged config not set!
+04-19 13:21:35.608   424   424 W /system/bin/hwservicemanager: Cannot open /odm/manifest.xml
+04-19 13:21:35.609   698  4614 I HwNetworkPolicy: onTransact, code = 203
+04-19 13:21:35.610  2052  2372 I HwNetworkPolicyManager: getHwUidPolicy uid = 10809 policy = 0
+04-19 13:21:35.610  3136  3136 I HiBoard_Workspace: onWindowVisibilityChanged：8 isOverlayClosed:true
+04-19 13:21:35.610  3136  3136 I HiBoard_MainView: onWindowVisibilityChanged：8 isOverlayClosed:true
+04-19 13:21:35.610  3136  3136 I HiBoard_FlowLayout: onWindowVisibilityChanged：8 isOverlayClosed:true
+04-19 13:21:35.611   698  4614 I HwAudioService: now type = 255,reportForegroundAppType = -1,systemload = 255
+04-19 13:21:35.611   698  4614 W libc    : Set property "sys.iaware.type" to "-1"
+04-19 13:21:35.612  1922  2080 W libEGL  : EGLNativeWindowType 0x77fa4a0010 disconnect failed
+04-19 13:21:35.614 14278 14278 D BarTransitions.HwNavigationBarView: MODE_TRANSLUCENT -> MODE_TRANSPARENT animate=false
+04-19 13:21:35.614 14278 14278 D BarTransitions.HwNavigationBarView: applyModeBackground oldMode=MODE_TRANSLUCENT newMode=MODE_TRANSPARENT animate=false
+04-19 13:21:35.614  3136 32297 W libEGL  : EGLNativeWindowType 0x77f7c7e010 disconnect failed
+04-19 13:21:35.621 30799 30799 D HwFLClassLoader: get used feature list :/feature/used-list failed!
+04-19 13:21:35.622 30799 30799 D HwFLClassLoader: USE_FEATURE_LIST had not init! 
+04-19 13:21:35.624 30799 30813 I HwApiCacheMangerEx: apicache mCurPackageName=com.android.keepass uptimes=240713531
+04-19 13:21:35.625   424   424 W /system/bin/hwservicemanager: Cannot open /odm/manifest.xml
+04-19 13:21:35.634 30799 30813 I HwApiCacheMangerEx: apicache oUid null
+04-19 13:21:35.635   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x1,btStrd=256,size=4096,pid=676 
+04-19 13:21:35.635   676   676 I GRALLOC : 	 yuv=2,w=16,h=16,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.635   676   676 I GRALLOC : 	 iova_size=4096,conUsg=0x100,proUsg=0x100,	 strd=64,[afbc]HdrStrd=0 PyldStrd=0 Scrmbl=0,ionhnd = 1 
+04-19 13:21:35.636 30799 30813 I HwApiCacheMangerEx: apicache volumes null
+04-19 13:21:35.637 30799 30813 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=com.android.keepass#10809#256
+04-19 13:21:35.637 30799 30813 I HwApiCacheMangerEx: apicache oUid 10809
+04-19 13:21:35.637 30799 30813 I HwApiCacheMangerEx: apicache volumes null
+04-19 13:21:35.637 30799 30813 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=com.android.keepass#10809#0
+04-19 13:21:35.637 30799 30813 I HwApiCacheMangerEx: apicache async read begin packageName=com.android.keepass userid=0
+04-19 13:21:35.638 30799 30813 I HwApiCacheMangerEx: apicache pi null
+04-19 13:21:35.638 30799 30813 I chatty  : uid=10809(u0_a809) queued-work-loo identical 1 line
+04-19 13:21:35.638 30799 30813 I HwApiCacheMangerEx: apicache pi null
+04-19 13:21:35.638 30799 30813 I HwApiCacheMangerEx: apicache oUid null
+04-19 13:21:35.638 30799 30813 I HwApiCacheMangerEx: apicache async read finished packageName=com.android.keepass userid=0 totalus=768
+04-19 13:21:35.642 30799 30799 I HwApiCacheMangerEx: apicache pi null
+04-19 13:21:35.647 30799 30799 I fixeh   : Generating GeneralControlPolicy from local config
+04-19 13:21:35.648 30799 30799 I fixeh   : Enter policy is GeneralControlPolicy {limit: -1, exclude: false, packages: null, classes: null, methods: null, pattern: null method patterns:null} expections: {java.io.IOException}, expectionsPattern: null,expectionStackRepeat: {(java.io.IOException,-1)} filterpackages: null filterclasses: null filtermethodss: null filterstackkeywords: null
+04-19 13:21:35.648 30799 30799 I fixeh   : find local dir!
+04-19 13:21:35.648 30799 30799 I fixeh   : find tmp dir!
+04-19 13:21:35.648 30799 30799 I fixeh   : find fixeh-p!!
+04-19 13:21:35.648 30799 30799 I fixeh   : Start watching config file /data/local/tmp/fixeh-policy.xml
+04-19 13:21:35.652 30799 30813 E MemoryLeakMonitorManager: MemoryLeakMonitor.jar is not exist!
+04-19 13:21:35.653 30799 30799 E Minikin : Could not get cmap table size!
+04-19 13:21:35.661 30799 30799 I HwCust  : Constructor found for class android.app.HwCustActivityImpl
+04-19 13:21:35.661 30799 30799 D HwCust  : Create obj success use class android.app.HwCustActivityImpl
+04-19 13:21:35.663 30799 30799 V HwPolicyFactory: : success to get AllImpl object and return....
+04-19 13:21:35.664 30799 30799 I HwCust  : Constructor found for class android.app.HwCustHwWallpaperManagerImpl
+04-19 13:21:35.664 30799 30799 D HwCust  : Create obj success use class android.app.HwCustHwWallpaperManagerImpl
+04-19 13:21:35.666 30799 30799 V ActivityThread: ActivityThread,callActivityOnCreate
+04-19 13:21:35.667 30799 30799 V HwWidgetFactory: : successes to get AllImpl object and return....
+04-19 13:21:35.667 14278 14296 D HwRecentsLockUtils: Search
+04-19 13:21:35.667  1872  1884 E HsmCoreServiceImpl: onTransact in code is: 103
+04-19 13:21:35.667  1872  1884 I MediaProcessHandler: playingUids: 
+04-19 13:21:35.667   698  9526 D ActivityManager: Skipping, home or recents stack task: TaskRecord{45025e8 #1 A=com.huawei.android.launcher U=0 StackId=0 sz=1}
+04-19 13:21:35.667   698  9526 D ActivityManager: Skipping intent:act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10a00000 cmp=io.appium.settings/.Settings
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[48,1299][1032,2667]
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=com.android.nfc.NFCROOTACTIVITY flg=0x10808000 cmp=com.android.nfc/.NfcRootActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT,android.intent.category.BROWSABLE] dat=alipays://platformapi/startApp?appId=20000003&actionType=toBillDetails&tradeNO=2019041822001128481029114062_413564130249964922&tagfrom=push&tagid=_BotntvV2KW flg=0x10800000 pkg=com.eg.android.AlipayGphone cmp=com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=android.intent.action.MAIN flg=0x10840000 hwFlg=0x100 cmp=com.android.incallui/.InCallActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:flg=0x10840000 hwFlg=0x100 cmp=com.android.deskclock/.alarmclock.LockAlarmFullActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:flg=0x18800000 cmp=com.tencent.mm/.plugin.base.stub.WXEntryActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:flg=0x18800000 cmp=com.tencent.mm/.plugin.base.stub.WXPayEntryActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:flg=0x34800000 hwFlg=0x100 cmp=com.huawei.systemmanager/.spacecleanner.SpacePieceCleanActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:flg=0x34800000 hwFlg=0x100 cmp=com.huawei.systemmanager/com.huawei.harassmentinterception.ui.InterceptionActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=com.huawei.android.launcher.action.ACCESS_SPLIT_SCREEN_APP cat=[android.intent.category.DEFAULT] flg=0x10804000 cmp=com.huawei.android.launcher/.splitscreen.SplitScreenAppActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=android.intent.action.VIEW dat=content://org.zywx.wbpalmstar.widgetone.uex11296876.fileprovider/download_apk/juneyaoair_53200.apk typ=application/vnd.android.package-archive flg=0x10800001 cmp=com.android.packageinstaller/.InstallStart
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT,android.intent.category.BROWSABLE] dat=alipays://platformapi/startApp?appId=20000003&actionType=toBillDetails&tradeNO=2019041822001428481029169399&tagfrom=push&tagid=_BotWZsOviN flg=0x10800000 pkg=com.eg.android.AlipayGphone cmp=com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT,android.intent.category.BROWSABLE] dat=alipays://platformapi/startApp?appId=20000003&actionType=toBillDetails&tradeNO=2019041722001428481028928267&tagfrom=push&tagid=_BoMiAnSc7N flg=0x10800000 pkg=com.eg.android.AlipayGphone cmp=com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:flg=0x10810000 cmp=cn.wps.moffice_eng/cn.wps.moffice.main.sniffermonitorad.ui.AdFloatActivity
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=android.intent.action.VIEW dat=content://com.tencent.mm.external.fileprovider/external/tencent/MicroMsg/Download/patch typ=application/octet-stream flg=0x10800001 pkg=cn.wps.moffice_eng cmp=cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity2
+04-19 13:21:35.668   698  9526 D ActivityManager: Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT,android.intent.category.BROWSABLE] dat=alipays://platformapi/startApp?appId=20000167&tUserId=2088512348862878&tUserType=1&tLoginId=186***3725&tagfrom=push&tagid=_f5a444459b9f93ff flg=0x10800000 pkg=com.eg.android.AlipayGphone cmp=com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity
+04-19 13:21:35.674 30799 30799 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.23, mControlPoint1y = 0.06, mControlPoint2x = 0.09, mControlPoint2y = 0.97
+04-19 13:21:35.674 30799 30799 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+04-19 13:21:35.674 30799 30799 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.23, mControlPoint1y = 0.06, mControlPoint2x = 0.09, mControlPoint2y = 0.97
+04-19 13:21:35.674 30799 30799 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+04-19 13:21:35.679 30799 30799 D HwGalleryCacheManagerImpl: mIsEffect:false
+04-19 13:21:35.688   698  4614 I ActivityManager: START u0 {cmp=com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity} from uid 10809
+04-19 13:21:35.688   698  4614 I ActivityManager: ActivityRecord info: ActivityInfo{faf61c2 com.keepassdroid.fileselect.FileSelectActivity}
+04-19 13:21:35.690   698  4614 V WindowManager: addAppToken: AppWindowToken{895895a token=Token{2967505 ActivityRecord{5dc687c u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity t3042}}} controller={TaskWindowContainerController taskId=3042} at 2147483647
+04-19 13:21:35.691   698  4614 V WindowManager: Removing starting Window{b86499e u0 Splash Screen com.android.keepass} from AppWindowToken{7ee67ab token=Token{b4385fa ActivityRecord{7c20025 u0 com.android.keepass/.KeePass t3042}}}
+04-19 13:21:35.691   698  4614 V WindowManager: Adding Window{b86499e u0 Splash Screen com.android.keepass} to AppWindowToken{895895a token=Token{2967505 ActivityRecord{5dc687c u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity t3042}}}
+04-19 13:21:35.694 30799 30799 D ActivityThread: add activity client record, r= ActivityRecord{a6f20c0 token=android.os.BinderProxy@e72edb7 {com.android.keepass/com.android.keepass.KeePass}} token= android.os.BinderProxy@e72edb7
+04-19 13:21:35.698   698 14522 V WindowManager: No longer Stopped: AppWindowToken{895895a token=Token{2967505 ActivityRecord{5dc687c u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity t3042}}}
+04-19 13:21:35.699   698 14522 V WindowManager: No longer Stopped: AppWindowToken{895895a token=Token{2967505 ActivityRecord{5dc687c u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity t3042}}}
+04-19 13:21:35.702   698 14522 V WindowManager: Checking 1 opening apps (frozen=false timeout=false)...
+04-19 13:21:35.702   698 14522 V WindowManager: Check opening app=AppWindowToken{895895a token=Token{2967505 ActivityRecord{5dc687c u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity t3042}}}: allDrawn=false startingDisplayed=true startingMoved=false isRelaunching()=false
+04-19 13:21:35.706 30799 30799 D HwCust  : Create obj success use class android.app.HwCustActivityImpl
+04-19 13:21:35.706 30799 30799 D HwCust  : Create obj success use class android.app.HwCustHwWallpaperManagerImpl
+04-19 13:21:35.706 30799 30799 V ActivityThread: ActivityThread,callActivityOnCreate
+04-19 13:21:35.707 30799 30799 D fixeh   : current stack is java.lang.SecurityException: 
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at com.keepassdroid.fileselect.RecentFileHistory.sqlDatabaseExists(RecentFileHistory.java:124)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at com.keepassdroid.fileselect.RecentFileHistory.upgradeFromSQL(RecentFileHistory.java:81)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at com.keepassdroid.fileselect.RecentFileHistory.init(RecentFileHistory.java:69)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at com.keepassdroid.fileselect.RecentFileHistory.hasRecentFiles(RecentFileHistory.java:148)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at com.keepassdroid.fileselect.FileSelectActivity.onCreate(FileSelectActivity.java:156)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.app.Activity.performCreate(Activity.java:7383)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1218)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3256)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3411)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.app.ActivityThread.-wrap12(Unknown Source:0)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1994)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.os.Handler.dispatchMessage(Handler.java:108)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.os.Looper.loop(Looper.java:166)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at android.app.ActivityThread.main(ActivityThread.java:7529)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at java.lang.reflect.Method.invoke(Native Method)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:245)
+04-19 13:21:35.707 30799 30799 D fixeh   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:921)
+04-19 13:21:35.707 30799 30799 I fixeh   : XMLCONTROLLER::entering(0) java.io.File: boolean exists() with exception java.lang.SecurityException and such exception entering(0)
+04-19 13:21:35.707 30799 30799 I fixeh   : passing on java.io.File: boolean exists()
+04-19 13:21:35.709 30799 30799 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.23, mControlPoint1y = 0.06, mControlPoint2x = 0.09, mControlPoint2y = 0.97
+04-19 13:21:35.709 30799 30799 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+04-19 13:21:35.709 30799 30799 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.23, mControlPoint1y = 0.06, mControlPoint2x = 0.09, mControlPoint2y = 0.97
+04-19 13:21:35.709 30799 30799 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.6, mControlPoint1y = 0.9, mControlPoint2x = 0.8, mControlPoint2y = 1.0
+04-19 13:21:35.723 30799 30799 D HwWechatOptimizeImpl: mIsEffect:false
+04-19 13:21:35.724 30799 30799 D HwRTBlurUtils: check blur style for HwPhoneWindow, themeResId : 0x7f0d000d, context : com.keepassdroid.fileselect.FileSelectActivity@1634f9f, Nhwext : 0, get Blur : disable with , null
+04-19 13:21:35.725 30799 30799 W WindowDecorActionBar: should not do the transition or the transition anim is null or it is running or the mContainer view is null or mContainer view hasn't been drawn to screen 
+04-19 13:21:35.726 30799 30799 E HwResourcesImpl: readDefaultConfig : FileNotFoundException
+04-19 13:21:35.733 30799 30799 I HwCust  : Constructor found for class android.content.res.HwCustHwResourcesImpl
+04-19 13:21:35.733 30799 30799 D HwCust  : Create obj success use class android.content.res.HwCustHwResourcesImpl
+04-19 13:21:35.734   684 21693 I audio_hw_primary: usb_ext_get_parameters: check show hires (false)
+04-19 13:21:35.734   764  1032 I hash_map_utils: key: 'typec_need_show_hires' value: ''
+04-19 13:21:35.735   698   698 I HwAudioService: check HiRes Icon false
+04-19 13:21:35.735   698   698 W ActivityManager: Sending non-protected broadcast huawei.intent.action.hideHiResIcon from system uid 1000 pkg null
+04-19 13:21:35.735   698   698 I HwAudioService: broadcastHiresIntent : false
+04-19 13:21:35.735   698   698 W ActivityManager: Sending non-protected broadcast huawei.intent.action.hideHiResIcon from system uid 1000 pkg null
+04-19 13:21:35.736 14278 14278 D StatusBarIconController: setIconVisibility icon is null or visibility not change visibility=false
+04-19 13:21:35.745 30799 30799 I HwApiCacheMangerEx: apicache oUid 10809
+04-19 13:21:35.745 30799 30799 I HwApiCacheMangerEx: apicache volumes [Landroid.os.storage.StorageVolume;@1aa7b86
+04-19 13:21:35.748 30799 30799 D ActivityThread: add activity client record, r= ActivityRecord{7b1e59d token=android.os.BinderProxy@1cba1f9 {com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity}} token= android.os.BinderProxy@1cba1f9
+04-19 13:21:35.749 30799 30799 I HwApiCacheMangerEx: apicache oUid 10809
+04-19 13:21:35.749 30799 30799 I HwApiCacheMangerEx: apicache volumes [Landroid.os.storage.StorageVolume;@1aa7b86
+04-19 13:21:35.749 30799 30799 I HwApiCacheMangerEx: apicache oUid 10809
+04-19 13:21:35.749 30799 30799 I HwApiCacheMangerEx: apicache volumes [Landroid.os.storage.StorageVolume;@f22ca12
+04-19 13:21:35.755 30799 30799 D OpenGLRenderer:   HWUI Binary is  enabled
+04-19 13:21:35.756   715  1159 D SurfaceFlinger: SurfaceFlinger: getDisplayConfigs--3.000000, 1080, 1920
+04-19 13:21:35.756   715  1159 I chatty  : uid=1000(system) Binder:715_3 identical 1 line
+04-19 13:21:35.756   715  1159 D SurfaceFlinger: SurfaceFlinger: getDisplayConfigs--3.000000, 1080, 1920
+04-19 13:21:35.758 30799 30819 D OpenGLRenderer: HWUI GL Pipeline
+04-19 13:21:35.761   698  4614 V WindowManager: Adding Window{b92e126 u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity} to AppWindowToken{895895a token=Token{2967505 ActivityRecord{5dc687c u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity t3042}}}
+04-19 13:21:35.762   698  4614 V WindowManager: addWindow: New client android.os.BinderProxy@a8e5c81: window=Window{b92e126 u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity} Callers=com.android.server.wm.HwWindowManagerService.addWindow:585 com.android.server.wm.Session.addToDisplay:199 android.view.IWindowSession$Stub.onTransact:124 com.android.server.wm.Session.onTransact:161 android.os.Binder.execTransact:675 
+04-19 13:21:35.778 30799 30799 I PressGestureDetector: onAttached begin
+04-19 13:21:35.779 30799 30799 I PressGestureDetector: onAttached end
+04-19 13:21:35.780 30799 30820 I PressGestureDetector: enabledInPad = false,isPcCastMode = false
+04-19 13:21:35.796   698  9526 W WindowManager: EGLdebug Created surface WindowStateAnimator{4974b14 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity}
+04-19 13:21:35.798   698  9526 V HwPhoneWindowManager: updateSystemUiColorLw window=Window{b92e126 u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity},EmuiStyle=0,StatusBarColor=0xff000000,NavigationBarColor=0xff000000, mLastIsEmuiLightStyle=-1, mForceNotchStatusBar=false
+04-19 13:21:35.798   698  1109 D HwPhoneWindowManager: Transact:setSystemUIColor to status bar service
+04-19 13:21:35.799 14278 22790 I CommandQueue: updateBarBgColor
+04-19 13:21:35.800 14278 22790 D CommandQueue: CommandQueue, setBarBackgroundColor
+04-19 13:21:35.801 14278 22790 D HwRecentsLockUtils: Search
+04-19 13:21:35.801  1872  1884 E HsmCoreServiceImpl: onTransact in code is: 103
+04-19 13:21:35.801  1872  1884 I MediaProcessHandler: playingUids: 
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping, home or recents stack task: TaskRecord{45025e8 #1 A=com.huawei.android.launcher U=0 StackId=0 sz=1}
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10a00000 cmp=io.appium.settings/.Settings
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[48,1299][1032,2667]
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=com.android.nfc.NFCROOTACTIVITY flg=0x10808000 cmp=com.android.nfc/.NfcRootActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT,android.intent.category.BROWSABLE] dat=alipays://platformapi/startApp?appId=20000003&actionType=toBillDetails&tradeNO=2019041822001128481029114062_413564130249964922&tagfrom=push&tagid=_BotntvV2KW flg=0x10800000 pkg=com.eg.android.AlipayGphone cmp=com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=android.intent.action.MAIN flg=0x10840000 hwFlg=0x100 cmp=com.android.incallui/.InCallActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:flg=0x10840000 hwFlg=0x100 cmp=com.android.deskclock/.alarmclock.LockAlarmFullActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:flg=0x18800000 cmp=com.tencent.mm/.plugin.base.stub.WXEntryActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:flg=0x18800000 cmp=com.tencent.mm/.plugin.base.stub.WXPayEntryActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:flg=0x34800000 hwFlg=0x100 cmp=com.huawei.systemmanager/.spacecleanner.SpacePieceCleanActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:flg=0x34800000 hwFlg=0x100 cmp=com.huawei.systemmanager/com.huawei.harassmentinterception.ui.InterceptionActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=com.huawei.android.launcher.action.ACCESS_SPLIT_SCREEN_APP cat=[android.intent.category.DEFAULT] flg=0x10804000 cmp=com.huawei.android.launcher/.splitscreen.SplitScreenAppActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=android.intent.action.VIEW dat=content://org.zywx.wbpalmstar.widgetone.uex11296876.fileprovider/download_apk/juneyaoair_53200.apk typ=application/vnd.android.package-archive flg=0x10800001 cmp=com.android.packageinstaller/.InstallStart
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT,android.intent.category.BROWSABLE] dat=alipays://platformapi/startApp?appId=20000003&actionType=toBillDetails&tradeNO=2019041822001428481029169399&tagfrom=push&tagid=_BotWZsOviN flg=0x10800000 pkg=com.eg.android.AlipayGphone cmp=com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT,android.intent.category.BROWSABLE] dat=alipays://platformapi/startApp?appId=20000003&actionType=toBillDetails&tradeNO=2019041722001428481028928267&tagfrom=push&tagid=_BoMiAnSc7N flg=0x10800000 pkg=com.eg.android.AlipayGphone cmp=com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:flg=0x10810000 cmp=cn.wps.moffice_eng/cn.wps.moffice.main.sniffermonitorad.ui.AdFloatActivity
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=android.intent.action.VIEW dat=content://com.tencent.mm.external.fileprovider/external/tencent/MicroMsg/Download/patch typ=application/octet-stream flg=0x10800001 pkg=cn.wps.moffice_eng cmp=cn.wps.moffice_eng/cn.wps.moffice.documentmanager.PreStartActivity2
+04-19 13:21:35.802   698  8865 D ActivityManager: Skipping intent:act=android.intent.action.VIEW cat=[android.intent.category.DEFAULT,android.intent.category.BROWSABLE] dat=alipays://platformapi/startApp?appId=20000167&tUserId=2088512348862878&tUserType=1&tLoginId=186***3725&tagfrom=push&tagid=_f5a444459b9f93ff flg=0x10800000 pkg=com.eg.android.AlipayGphone cmp=com.eg.android.AlipayGphone/com.alipay.mobile.quinox.SchemeLauncherActivity
+04-19 13:21:35.803 14278 14278 D TintManager: statusBarIconTint=#99FFFFFF,navigationBarIconTint=#FF000000
+04-19 13:21:35.806   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=676 
+04-19 13:21:35.806   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.806   676   676 I GRALLOC : 	 iova_size=8486912,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.808 30799 30819 I OpenGLRenderer: Initialized EGL, version 1.4
+04-19 13:21:35.808 30799 30819 D OpenGLRenderer: Swap behavior 2
+04-19 13:21:35.809   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=676 
+04-19 13:21:35.809   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.809   676   676 I GRALLOC : 	 iova_size=8486912,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.812   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=676 
+04-19 13:21:35.812   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.812   676   676 I GRALLOC : 	 iova_size=8486912,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.816 14278 14278 D StatusBarIconController: setIconVisibility icon is null or visibility not change visibility=false
+04-19 13:21:35.820 30799 30819 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000
+04-19 13:21:35.821 30799 30819 E vndksupport: Could not load vendor/lib64/egl/libGLES_mali_v2.so from sphal namespace: dlopen failed: library "vendor/lib64/egl/libGLES_mali_v2.so" not found.
+04-19 13:21:35.826 30799 30804 I zygote64: Do partial code cache collection, code=26KB, data=22KB
+04-19 13:21:35.826 30799 30804 I zygote64: After code cache collection, code=25KB, data=22KB
+04-19 13:21:35.826 30799 30804 I zygote64: Increasing code cache capacity to 128KB
+04-19 13:21:35.827   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=676 
+04-19 13:21:35.827   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.827   676   676 I GRALLOC : 	 iova_size=8486912,conUsg=0xb00,proUsg=0xb00,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.840   698  9526 D WindowManager: finishDrawingWindow: Window{b92e126 u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity} mDrawState=DRAW_PENDING
+04-19 13:21:35.841 30799 30799 W InputMethodManager: startInputReason = 1
+04-19 13:21:35.843   698  9526 D HwSecImmHelper: isPasswordInputType = false, inputType = 1
+04-19 13:21:35.853  3379  3379 I wangchen: ImeService.onEvaluateFullscreenMode: super function define fullscreen return false
+04-19 13:21:35.853   698  1128 I ActivityManager: Displayed com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity: +147ms (total +36s386ms)
+04-19 13:21:35.853  3379  3379 I wangchen: ImeService.onEvaluateFullscreenMode: super function define fullscreen return false
+04-19 13:21:35.853   698  1871 I ActivityManager: wait Launched end, result = 0 who = ComponentInfo{com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity}
+04-19 13:21:35.853   698  1377 V WindowManager: removeIfPossible: Window{b86499e u0 Splash Screen com.android.keepass} callers=com.android.server.wm.WindowState.removeIfPossible:1914 com.android.server.wm.WindowManagerService.removeWindow:2040 com.android.server.wm.Session.remove:218 android.view.ViewRootImpl.dispatchDetachedFromWindow:3767 android.view.ViewRootImpl.doDie:6835 
+04-19 13:21:35.854   698  1377 V WindowManager: Not removing Window{b86499e u0 Splash Screen com.android.keepass EXITING} due to exit animation 
+04-19 13:21:35.856   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=676 
+04-19 13:21:35.856   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.856   676   676 I GRALLOC : 	 iova_size=8486912,conUsg=0xb00,proUsg=0xb00,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.856  3379  3379 I KeymapLoader: appScale=3.3 selfScale=3.3 3.3
+04-19 13:21:35.858  3379  3379 I IFontSizeSetting: setCandParm getCandStyleParam success
+04-19 13:21:35.858  3379  3379 I IFontSizeSetting: fontsize 60
+04-19 13:21:35.858  3379  3379 I IFontSizeSetting: before fontDefSize 60 is DualCand false
+04-19 13:21:35.858  3379  3379 I IFontSizeSetting: getFontSizePx 1 originalFontSize 60
+04-19 13:21:35.858  3379  3379 I IFontSizeSetting: after fontDefSize 60
+04-19 13:21:35.859   698  1871 D WindowManager: finishDrawingWindow: Window{b92e126 u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity} mDrawState=HAS_DRAWN
+04-19 13:21:35.859 30799 30799 W InputMethodManager: startInputReason = 5
+04-19 13:21:35.877  3379  3379 I wangchen: ImeService.onEvaluateFullscreenMode: super function define fullscreen return false
+04-19 13:21:35.878  3379  3379 I wangchen: com.baidu.bzq apply, has in db mode - false, is db mode - false
+04-19 13:21:35.878  3379  3379 I wangchen: com.baidu.bzo apply, has in db mode - false, is db mode - false
+04-19 13:21:35.878  3379  3379 I wangchen: com.baidu.bzo apply, has in db mode - false, is db mode - false
+04-19 13:21:35.880   698  1871 W ActivityManager: Sending non-protected broadcast huawei.action.floattasks.IME_WINDOW_STATE_CHANGED from system 14278:com.android.systemui/u0a39 pkg com.android.systemui
+04-19 13:21:35.881  3256  6509 D [HwRecSys]HwRecSysService: onEvent actionID: 10005 msg:null		
+04-19 13:21:35.881  1886  2412 I PGServer: report state:10005 event type:1 pid:0 uid:0 pkg:null to pid: 698
+04-19 13:21:35.883   698  1871 W WindowManager: EGLdebug Created surface WindowStateAnimator{d17773b InputMethod}
+04-19 13:21:35.888   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8204288,pid=676 
+04-19 13:21:35.888   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1848,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.888   676   676 I GRALLOC : 	 iova_size=8204288,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.890   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8204288,pid=676 
+04-19 13:21:35.890   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1848,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.890   676   676 I GRALLOC : 	 iova_size=8204288,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.892  3379  3379 I wangchen: SysInfo.getSysParam: orientation=1||config d=3.0,w=1080,h=1920||metrics d=3.0,w=1080,h=1920||sdk=26,bar_h=72
+04-19 13:21:35.892  3379  3379 I KeymapLoader: w=1080 h=1920 ori=true appScale=3.3 s1=3.0
+04-19 13:21:35.893  3379  3379 I KeymapLoader: appScale=3.3 selfScale=3.3 3.3
+04-19 13:21:35.893   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8204288,pid=676 
+04-19 13:21:35.893   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1848,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.893   676   676 I GRALLOC : 	 iova_size=8204288,conUsg=0x900,proUsg=0x900,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.893 14278 14278 D ImageWallpaper: onOffsetsChanged: xOffset=0.0, yOffset=0.0, xOffsetStep=0.0, yOffsetStep=0.0, xPixels=0, yPixels=0
+04-19 13:21:35.893 14278 14278 D ImageWallpaper: Suppressed drawFrame since redraw is not needed and offsets have not changed.sf=Rect(0, 0 - 2160, 1920)
+04-19 13:21:35.894  3379  4358 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000
+04-19 13:21:35.894  3379  3379 I IFontSizeSetting: setCandParm getCandStyleParam success
+04-19 13:21:35.894  3379  3379 I IFontSizeSetting: fontsize 60
+04-19 13:21:35.894  3379  3379 I IFontSizeSetting: before fontDefSize 60 is DualCand false
+04-19 13:21:35.894  3379  3379 I IFontSizeSetting: getFontSizePx 1 originalFontSize 60
+04-19 13:21:35.894  3379  3379 I IFontSizeSetting: after fontDefSize 60
+04-19 13:21:35.904   800   800 E Thermal-daemon: [ap] temp_new :36  temp_old :35
+04-19 13:21:35.905  1886  2218 I ThermalService: Receive temperature change, type: 0, temp: 36 from thermald
+04-19 13:21:35.905   800   800 E Thermal-daemon: Report temperature: [ap] temp :36  report_threshold:1
+04-19 13:21:35.910   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8486912,pid=676 
+04-19 13:21:35.910   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1920,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.910   676   676 I GRALLOC : 	 iova_size=8486912,conUsg=0xb00,proUsg=0xb00,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.910  3379  3379 I wangchen: ImeService.onEvaluateFullscreenMode: super function define fullscreen return false
+04-19 13:21:35.911  3379  3379 I wangchen: com.baidu.bzq apply, has in db mode - false, is db mode - false
+04-19 13:21:35.911  3379  3379 I wangchen: com.baidu.bzo apply, has in db mode - false, is db mode - false
+04-19 13:21:35.911  3379  3379 I wangchen: com.baidu.bzo apply, has in db mode - false, is db mode - false
+04-19 13:21:35.923   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8204288,pid=676 
+04-19 13:21:35.923   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1848,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.923   676   676 I GRALLOC : 	 iova_size=8204288,conUsg=0xb00,proUsg=0xb00,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:35.924   698  1871 V WindowManager: notifyAppStopped: AppWindowToken{7ee67ab token=Token{b4385fa ActivityRecord{7c20025 u0 com.android.keepass/.KeePass t3042}}}
+04-19 13:21:35.925   698 14522 V WindowManager: notifyAppStopped: AppWindowToken{6f40da6 token=Token{43e6b01 ActivityRecord{70ac8e8 u0 com.huawei.android.launcher/.unihome.UniHomeLauncher t1}}}
+04-19 13:21:35.927   698  1109 D HwGameAssistantController: pid=1922, uid=10057, foreground=false
+04-19 13:21:35.929   698  1397 W AwareLog: SchedLevelBoost: onFgActivitiesChanged config not set!
+04-19 13:21:35.929   698  1871 D WindowManager: finishDrawingWindow: Window{e5f0135 u0 InputMethod} mDrawState=DRAW_PENDING
+04-19 13:21:35.930  3379  3379 I wangchen: ImeService.onEvaluateFullscreenMode: super function define fullscreen return false
+04-19 13:21:35.931  3379  3379 I wangchen: ImeService.onEvaluateFullscreenMode: super function define fullscreen return false
+04-19 13:21:35.931   698  1377 D CubicBezierInterpolator: CubicBezierInterpolator  mControlPoint1x = 0.4, mControlPoint1y = 0.7, mControlPoint2x = 0.65, mControlPoint2y = 1.0
+04-19 13:21:35.936  3379  4358 D OpenGLRenderer:   HWUI Binary is  enabled
+04-19 13:21:35.939   698  1871 V WindowManager: Adding Window{5f7a975 u0 PopupWindow:c2a9d36} to Window{e5f0135 u0 InputMethod}
+04-19 13:21:35.940   698  1871 V WindowManager: addWindow: New client android.os.BinderProxy@b48e8ac: window=Window{5f7a975 u0 PopupWindow:c2a9d36} Callers=com.android.server.wm.HwWindowManagerService.addWindow:585 com.android.server.wm.Session.addToDisplay:199 android.view.IWindowSession$Stub.onTransact:124 com.android.server.wm.Session.onTransact:161 android.os.Binder.execTransact:675 
+04-19 13:21:35.951   698  1871 W WindowManager: EGLdebug Created surface WindowStateAnimator{592fd0a PopupWindow:c2a9d36}
+04-19 13:21:35.954   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x1,btStrd=2048,size=155648,pid=676 
+04-19 13:21:35.954   676   676 I GRALLOC : 	 yuv=2,w=507,h=75,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.954   676   676 I GRALLOC : 	 iova_size=155648,conUsg=0x900,proUsg=0x900,	 strd=512,[afbc]HdrStrd=0 PyldStrd=0 Scrmbl=0,ionhnd = 1 
+04-19 13:21:35.955   676   676 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+04-19 13:21:35.956   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x1,btStrd=2048,size=155648,pid=676 
+04-19 13:21:35.956   676   676 I GRALLOC : 	 yuv=2,w=507,h=75,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.956   676   676 I GRALLOC : 	 iova_size=155648,conUsg=0x900,proUsg=0x900,	 strd=512,[afbc]HdrStrd=0 PyldStrd=0 Scrmbl=0,ionhnd = 1 
+04-19 13:21:35.957  3379  4358 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, egl_color_buffer_format *, EGLBoolean) returns 0x3000
+04-19 13:21:35.965   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x1,btStrd=2048,size=155648,pid=676 
+04-19 13:21:35.965   676   676 I GRALLOC : 	 yuv=2,w=507,h=75,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:35.965   676   676 I GRALLOC : 	 iova_size=155648,conUsg=0xb00,proUsg=0xb00,	 strd=512,[afbc]HdrStrd=0 PyldStrd=0 Scrmbl=0,ionhnd = 1 
+04-19 13:21:35.969   698  1871 D WindowManager: finishDrawingWindow: Window{5f7a975 u0 PopupWindow:c2a9d36} mDrawState=DRAW_PENDING
+04-19 13:21:36.033   698  1377 V WindowManager: Exit animation finished in Window{9781dc3 u0 com.huawei.android.launcher/com.huawei.android.launcher.unihome.UniHomeLauncher EXITING}: remove=false
+04-19 13:21:36.033   698  1377 E WindowManager: win=Window{9781dc3 u0 com.huawei.android.launcher/com.huawei.android.launcher.unihome.UniHomeLauncher EXITING} destroySurfaces: appStopped=true win.mWindowRemovalAllowed=false win.mRemoveOnExit=false
+04-19 13:21:36.034   698  1377 I WindowManager: Destroying surface Surface(name=com.huawei.android.launcher/com.huawei.android.launcher.unihome.UniHomeLauncher) called by com.android.server.wm.WindowStateAnimator.destroySurface:2089 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:899 com.android.server.wm.HwWindowStateAnimator.destroySurfaceLocked:1006 com.android.server.wm.WindowState.destroyOrSaveSurfaceUnchecked:2998 com.android.server.wm.WindowState.destroySurface:2951 com.android.server.wm.AppWindowToken.destroySurfaces:671 com.android.server.wm.AppWindowToken.destroySurfaces:655 com.android.server.wm.WindowState.onExitAnimationDone:4424 
+04-19 13:21:36.034   698  1377 V WindowManager: Exit animation finished in Window{70684ce u0 com.huawei.intelligent.Workspace EXITING}: remove=false
+04-19 13:21:36.034   698  1377 E WindowManager: win=Window{70684ce u0 com.huawei.intelligent.Workspace EXITING} destroySurfaces: appStopped=true win.mWindowRemovalAllowed=false win.mRemoveOnExit=false
+04-19 13:21:36.034   698  1377 I WindowManager: Destroying surface Surface(name=com.huawei.intelligent.Workspace) called by com.android.server.wm.WindowStateAnimator.destroySurface:2089 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:899 com.android.server.wm.HwWindowStateAnimator.destroySurfaceLocked:1006 com.android.server.wm.WindowState.destroyOrSaveSurfaceUnchecked:2998 com.android.server.wm.WindowState.destroySurface:2951 com.android.server.wm.AppWindowToken.destroySurfaces:671 com.android.server.wm.AppWindowToken.destroySurfaces:655 com.android.server.wm.WindowState.onExitAnimationDone:4424 
+04-19 13:21:36.035   698  1377 V WindowManager: Exit animation finished in Window{b86499e u0 Splash Screen com.android.keepass EXITING}: remove=true
+04-19 13:21:36.035   698  1377 E WindowManager: win=Window{b86499e u0 Splash Screen com.android.keepass EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true
+04-19 13:21:36.035   698  1377 I WindowManager: Destroying surface Surface(name=Splash Screen com.android.keepass) called by com.android.server.wm.WindowStateAnimator.destroySurface:2089 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:899 com.android.server.wm.HwWindowStateAnimator.destroySurfaceLocked:1006 com.android.server.wm.WindowState.destroyOrSaveSurfaceUnchecked:2998 com.android.server.wm.WindowState.destroySurface:2951 com.android.server.wm.AppWindowToken.destroySurfaces:671 com.android.server.wm.AppWindowToken.destroySurfaces:655 com.android.server.wm.WindowState.onExitAnimationDone:4424 
+04-19 13:21:36.035   698  1377 V WindowManager: postWindowRemoveCleanupLocked: Window{b86499e u0 Splash Screen com.android.keepass}
+04-19 13:21:36.035   698  1377 V WindowManager: Removing Window{b86499e u0 Splash Screen com.android.keepass} from AppWindowToken{895895a token=Token{2967505 ActivityRecord{5dc687c u0 com.android.keepass/com.keepassdroid.fileselect.FileSelectActivity t3042}}}
+04-19 13:21:36.037 14278 14278 D ImageWallpaper: onVisibilityChanged: mVisible, visible=true, false
+04-19 13:21:36.037 14278 14278 D ImageWallpaper: Visibility changed to visible=false
+04-19 13:21:37.036   809   809 I Pged-IPgedBinderService: ****action is 2, pid num is 3***
+04-19 13:21:37.036   809   809 I Pged-Freezer: thawPids
+04-19 13:21:37.041  1886  2215 D PgedBinderAdapter: unfrz ok, pid: [25666, 28547]
+04-19 13:21:37.179   698  5306 I MQoS    : MSG_QUERY_TCP_INFO called,count:1389
+04-19 13:21:37.180   698   698 I HwQoEJNI: send_cmd_kernel. begin
+04-19 13:21:37.180   698   698 I HwQoEJNI: send_cmd_kernel. end
+04-19 13:21:37.180   698   698 I QosMonitor: postEventFromNative: msg=100,arg1=0,arg2=10
+04-19 13:21:37.181   698   698 I MQoS    : rtt=180,tcp_tx_pkts=387,tcp_rx_pkts=260
+04-19 13:21:37.185   698  5306 I TrafficMonitor: getStatic,count:0,work status:false
+04-19 13:21:37.185   698  5306 I MQoS    : QOS_level:5(5),use RAT:4G;signalLvl:5
+04-19 13:21:37.301 30774 30776 I app_process: Do partial code cache collection, code=29KB, data=21KB
+04-19 13:21:37.302 30774 30776 I app_process: After code cache collection, code=29KB, data=21KB
+04-19 13:21:37.302 30774 30776 I app_process: Increasing code cache capacity to 128KB
+04-19 13:21:37.416   843   843 E         : [E/capacity_limit_control] not demo version, not set power control prop!
+04-19 13:21:37.438   676   676 I GRALLOC : 	 shrFd=10,fmt=0x1,intFmt=0x200000001,btStrd=4352,size=8204288,pid=676 
+04-19 13:21:37.438   676   676 I GRALLOC : 	 yuv=2,w=1080,h=1848,Stride u=0 v=0,offset u=0 v=0 
+04-19 13:21:37.438   676   676 I GRALLOC : 	 iova_size=8204288,conUsg=0xb00,proUsg=0xb00,	 strd=1088,[afbc]HdrStrd=1088 PyldStrd=69632 Scrmbl=2,ionhnd = 1 
+04-19 13:21:40.910   800   800 E Thermal-daemon: [charger_ic] temp_new :37  temp_old :36
+04-19 13:21:40.911  1886 13228 I ThermalService: Receive temperature change, type: 2, temp: 37 from thermald
+04-19 13:21:40.912  1886  2804 D HwThermalStateManager: Thermal type: 2 cur_temperature:37
+04-19 13:21:40.914   800   800 E Thermal-daemon: Report temperature: [charger_ic] temp :37  report_threshold:1
+04-19 13:21:42.468   843   843 E         : [E/capacity_limit_control] not demo version, not set power control prop!
+04-19 13:21:42.533   948  1061 W libc    : Set property "ril.hw_modem0.rssi" to "-74"
+04-19 13:21:42.548   698  1128 D SmartcareProc: onSignalStrengthsChanged: signalStrength is: SignalStrength: 0 -2017094084 0 255 0 0 32767 -1 32767 -1 -74 -9 31 -1 0 -1 false gw|lte , on sub: 1
+04-19 13:21:42.549   698  1128 D SmartcareProc: SignalStrength update result, ss: SignalStrengthInfo:49555504 mGsmSignalStrength: -1 mWcdmaRscp: -1 mWcdmaEcio: 255 mLteRsrp: -74 mLteRsrq: -9 mCdmaDbm: -1 mCdmaEcio: -1 mEvdoDbm: 32767mEvdoEcio: -1mLteRssnr: 31
+04-19 13:21:42.550   698   698 I MQoS    : onSignal: mSubId=1,currDataSubID=1
+04-19 13:21:42.550   698   698 I MQoS    : received cell-signal:5
+04-19 13:21:42.564 14278 14301 I HwMobileSignalController(1): subId:1 phoneType:1 networktype:13 targetClass:3 masterLevel:5 slaveLevel:-1
+04-19 13:21:45.917   800   800 E Thermal-daemon: [charger_ic] temp_new :36  temp_old :37
+04-19 13:21:45.919  1886 13228 I ThermalService: Receive temperature change, type: 2, temp: 36 from thermald
+04-19 13:21:45.922   800   800 E Thermal-daemon: Report temperature: [charger_ic] temp :36  report_threshold:1
